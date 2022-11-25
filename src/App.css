@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: red;
+  color: red;
 }
 
 .App-logo {
@@ -13,8 +15,45 @@
   }
 }
 
+.newImage {
+  padding: 10% 0% 10% 0%;
+  margin: 0px auto;
+}
+
+.newContainer {
+  position: relative;
+}
+
+.newContainer:hover .overlay {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 8%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  height: 84%;
+  width: 89.5%;
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  left: 10%;
+  top: 85%;
+  text-align: center;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: red;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
